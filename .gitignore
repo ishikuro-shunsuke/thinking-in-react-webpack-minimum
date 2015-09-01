@@ -1,4 +1,6 @@
 node_modules
 npm-debug.js
 dist/bundle.js
+src/tsd.json
+src/typings
 

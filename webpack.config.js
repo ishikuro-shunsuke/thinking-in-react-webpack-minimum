@@ -1,16 +1,21 @@
 module.exports = {
   entry: [
-    './src/app.js'
+    './src/app.tsx'
   ],
   output: {
     path: 'dist',
     filename: 'bundle.js'
   },
+  resolve: {
+    extensions: ['', '.tsx', '.ts', '.js']
+  },
+  externals: {
+    react: 'React'
+  },
   module: {
-    loaders: [{
-      test: /\.js$/,
-      loader: 'babel',
-    }]
+    loaders: [
+      { test: /\.ts(x?)$/, loader: 'ts-loader' }
+    ]
   }
 };
 
