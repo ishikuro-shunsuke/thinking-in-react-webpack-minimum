@@ -4,6 +4,7 @@ Minimum package of the [Thinking in React](https://facebook.github.io/react/docs
 ```
 npm install -g webpack
 npm install
+cd src/ ; tsd query react --action install --resolve --save ; cd ..
 webpack
 open dist/index.html
 ```
